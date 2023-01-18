@@ -8,17 +8,17 @@ def afficher_plateau():
     print(" {} | {} | {} ".format(plateau[6], plateau[7], plateau[8]))
 
 def verifier_gagnant():
-    if (plateau[0] == plateau[1] == plateau[2] and plateau[0] != " ") or
-        (plateau[3] == plateau[4] == plateau[5] and plateau[3] != " ") or
-        (plateau[6] == plateau[7] == plateau[8] and plateau[6] != " ") or
-        (plateau[0] == plateau[3] == plateau[6] and plateau[0] != " ") or
-        (plateau[1] == plateau[4] == plateau[7] and plateau[1] != " ") or
-        (plateau[2] == plateau[5] == plateau[8] and plateau[2] != " ") or
-        (plateau[0] == plateau[4] == plateau[8] and plateau[0] != " ") or
-         plateau[2] == plateau[4] == plateau[6] and plateau[2] != " "):
+        if ((plateau[0] == plateau[1] == plateau[2] and plateau[0] != " ") or
+            (plateau[3] == plateau[4] == plateau[5] and plateau[3] != " ") or
+            (plateau[6] == plateau[7] == plateau[8] and plateau[6] != " ") or
+            (plateau[0] == plateau[3] == plateau[6] and plateau[0] != " ") or
+            (plateau[1] == plateau[4] == plateau[7] and plateau[1] != " ") or
+            (plateau[2] == plateau[5] == plateau[8] and plateau[2] != " ") or
+            (plateau[0] == plateau[4] == plateau[8] and plateau[0] != " ") or
+            (plateau[2] == plateau[4] == plateau[6] and plateau[2] != " ")):
             return True
-    else:
-        return False
+        else:
+            return False
 
 joueur = "X"
 partie_finie = False
